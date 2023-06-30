@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: "https://us-east-1.aws.data.mongodb-api.com/app/restaurant-reviews-elqbs/endpoint/",
+    baseURL: "http://localhost:5000/api/v1/restaurants",
     headers: {
         "Content-type": "application/json"
     }
