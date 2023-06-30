@@ -1,0 +1,77 @@
+MongoDb `Cluster0`:
+	username: nitishbach
+	password: Ij7N7Fu8CSXrXwyx
+
+Connect URIs: 
+	through VSCode: mongodb+srv://nitishbach:Ij7N7Fu8CSXrXwyx@cluster0.aj2jzg8.mongodb.net/
+	throguh Drivers: mongodb+srv://nitishbach:Ij7N7Fu8CSXrXwyx@cluster0.aj2jzg8.mongodb.net/sample_restaurants?retryWrites=true&w=majority
+
+	./backend/RestaurantsDAO.js line 53: Unable to convert cursor to array or problem counting documents, MongoServerError: text index required for $text query
+
+6/18
+	Cannot read properties of undefined (reading 'map')
+TypeError: Cannot read properties of undefined (reading 'map')
+    at RestaurantsList (http://localhost:3000/static/js/bundle.js:708:29)
+    at renderWithHooks (http://localhost:3000/static/js/bundle.js:26231:22)
+    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:29113:24)
+    at beginWork (http://localhost:3000/static/js/bundle.js:30825:20)
+    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:15823:18)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:15867:20)
+    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:15924:35)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:35798:11)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:35045:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:34968:9)
+
+
+---------------
+	xhr.js:251 
+ GET http://localhost:5000/api/v1/restaurants/restaurant?id=5eb3d66… 404 (Not Found)
+restaurants.js:25 
+AxiosError {message: 'Request failed with status code 404', name: 'AxiosError', code: 'ERR_BAD_REQUEST', config: {…}, request: XMLHttpRequest, …}
+code
+: 
+"ERR_BAD_REQUEST"
+config
+: 
+{transitional: {…}, adapter: Array(2), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}
+message
+: 
+"Request failed with status code 404"
+name
+: 
+"AxiosError"
+request
+: 
+XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+response
+: 
+{data: {…}, status: 404, statusText: 'Not Found', headers: AxiosHeaders, config: {…}, …}
+stack
+: 
+"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/static/js/bundle.js:49999:12)\n    at XMLHttpRequest.onloadend (http://localhost:3000/static/js/bundle.js:48690:66)"
+[[Prototype]]
+: 
+Error
+
+-------------------
+
+Unable to convert cursor to array or problem counting documents, MongoServerError: text index required for $text query
+
+https://stackoverflow.com/questions/3305561/how-to-query-mongodb-with-like
+
+editing reviews doesn't work 
+
+wrokes now 
+
+don't know why but you can't have a let variable in the add-review class called cancelled and change it between false and true and use a ternary oparator in the returns function that returns the jsx div 
+but instead you have to have it as a const [cancelled, set canceled ] = useState(false)
+
+
+couldn't search throuh name filter had to change shit in restaurantsDAO.js 
+                query = { name: { $regex: filters["name"], $options:"i" } };
+line 26: 
+it works now 
+
+
+restaurant.js in services 
+unable to pass in query through get funcito that calls the http-common.js file 
