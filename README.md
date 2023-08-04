@@ -1,3 +1,12 @@
+This project was created by following the youtube tutorial on FreeCodeCamp's channel by Beau Carnes 
+Tutorial: https://www.youtube.com/watch?v=mrHNSanmqQ4
+Beau's Github: https://github.com/beaucarnes/restaurant-reviews
+FreeCodeCamp Channel: https://www.youtube.com/@freecodecamp
+
+Though due to this tutorial being created in April of 2021 and my website being created during May of 2022:
+  there were many errors along the process that resulted in a lot of small differences between Beau's code and mine
+  and this website's front-end is hosted on Firebase, whereas on the tutorial it is hosted on MongoDB Realm, due to MongoDB making front-end hosting a payed feature by 2023 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
